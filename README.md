@@ -39,9 +39,6 @@ GovAim is an AI-powered governance intelligence system that fuses real-time fina
   <img src="https://img.shields.io/badge/-Postman-FF6C37?style=flat&logo=postman&logoColor=white"/>
   <img src="https://img.shields.io/badge/-VS%20Code-007ACC?style=flat&logo=visual%20studio%20code&logoColor=white"/>
   <br/>
-  <img src="https://img.shields.io/badge/-Figma-000000?style=flat&logo=figma&logoColor=white"/>
-  <img src="https://img.shields.io/badge/-Adobe%20Illustrator-FF9A00?style=flat&logo=adobe-illustrator&logoColor=white"/>
-  <img src="https://img.shields.io/badge/-Adobe%20Photoshop-31A8FF?style=flat&logo=adobe-photoshop&logoColor=white"/>
 </p>
 
 ---
