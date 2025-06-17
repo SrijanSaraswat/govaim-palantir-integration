@@ -1,131 +1,123 @@
+# GovAim Intelligence Platform
 
-# 🚀 GovAim Intelligence Platform
-
-GovAim is an AI-powered governance intelligence system that fuses real-time financial sentiment analysis and GPT-backed chat capabilities — all unified with a Palantir-style visual dashboard.
-
-🔍 Whether it's fraud detection, policy analysis, or economic event insights — **GovAim** lets you ask *natural language* questions and get structured, intelligent answers.
+GovAim is an AI-powered unified governance intelligence platform that combines real-time financial sentiment analysis and smart query interpretation for policy, fraud detection, and investment insights. The system integrates a GPT-backed chatbot (GovAim) with a Palantir-style dashboard for visual and contextual intelligence delivery.
 
 ---
 
 ## ✨ Features
 
-- 🤖 **GPT-3.5 Chatbot:** Understands complex governance/finance queries.
-- 📊 **FinBERT Sentiment Analysis:** Analyzes financial tone in real time.
-- ⚙️ **Query Examples:** “Run predictive fraud analysis” / “Summarize Budget 2025.”
-- 🧠 **Palantir-Inspired Dashboard:** Visual + contextual insights combined.
-- 🔗 **Unified Full Stack Integration:** Django + React via REST APIs.
+- 🤖 **Chatbot with GPT-3.5-Turbo** – Understands natural language queries like policy analysis, budget summary, and fraud detection.
+- 📊 **FinBERT Sentiment Analysis** – Extracts Positive/Neutral/Negative tone from financial user queries.
+- 🔍 **Smart Query Detection** – Automatically classifies if the query is a sentiment-based task or GPT-based query.
+- 🧠 **Unified Frontend + Backend** – Real-time data interaction from React to Django API.
+- 📈 **Palantir-style Integration** – Allows GovAim chatbot to interact with a visual intelligence dashboard.
 
 ---
 
-## 🛠️ Tech Stack & Tools
+## ⚙️ Tech Stack & Tools
 
 <p align="center">
-  <img src="https://img.shields.io/badge/-C-659ad2?style=flat&logo=c&logoColor=white"/>
-  <img src="https://img.shields.io/badge/-C++-00599C?style=flat&logo=c%2B%2B&logoColor=white"/>
   <img src="https://img.shields.io/badge/-Python-black?style=flat&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/-Solidity-363636?style=flat&logo=solidity&logoColor=white"/>
   <img src="https://img.shields.io/badge/-Django-092E20?style=flat&logo=django&logoColor=white"/>
   <img src="https://img.shields.io/badge/-Django%20REST%20Framework-grey?style=flat&logo=django&logoColor=white"/>
-  <img src="https://img.shields.io/badge/-MySQL-F29111?style=flat&logo=mysql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/-PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/-PL/SQL-F80000?style=flat&logo=oracle&logoColor=white"/>
+  <img src="https://img.shields.io/badge/-SQLite-003B57?style=flat&logo=sqlite&logoColor=white"/>
+  <img src="https://img.shields.io/badge/-OpenAI-412991?style=flat&logo=openai&logoColor=white"/>
+  <img src="https://img.shields.io/badge/-Transformers-yellow?style=flat&logo=huggingface&logoColor=black"/>
   <br/>
-  <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/-JavaScript-F0DB4F?style=flat&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/-React-20232A?style=flat&logo=react&logoColor=61DAFB"/>
+  <img src="https://img.shields.io/badge/-Vite-646CFF?style=flat&logo=vite&logoColor=white"/>
+  <img src="https://img.shields.io/badge/-Tailwind-06B6D4?style=flat&logo=tailwind-css&logoColor=white"/>
+  <img src="https://img.shields.io/badge/-Axios-5A29E4?style=flat"/>
+  <img src="https://img.shields.io/badge/-Node.js-339933?style=flat&logo=nodedotjs&logoColor=white"/>
   <br/>
-  <img src="https://img.shields.io/badge/-Git-F1502F?style=flat&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white"/>
   <img src="https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white"/>
-  <img src="https://img.shields.io/badge/-Postman-FF6C37?style=flat&logo=postman&logoColor=white"/>
-  <img src="https://img.shields.io/badge/-VS%20Code-007ACC?style=flat&logo=visual%20studio%20code&logoColor=white"/>
-  <br/>
+  <img src="https://img.shields.io/badge/-VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white"/>
 </p>
 
 ---
 
-## 🗂️ Project Structure
+## 📁 Project Structure
 
 ```
-govaim-platform/
+govaim-palantir-integration/
 ├── backend/
+│   ├── analyses/
+│   ├── connections/
+│   ├── govaim_chat/
+│   ├── workflows/
+│   ├── astraeus_platform/
 │   ├── manage.py
-│   └── govaim_chat/          # Handles FinBERT + GPT logic
+│   ├── db.sqlite3
+│   ├── .env
+│   └── requirements.txt
+│
 ├── frontend/
 │   ├── src/
-│   ├── App.jsx
-│   └── services/api.js       # Axios POST to /api/chat/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── layouts/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── App.jsx, main.jsx, index.css...
+│   ├── public/
+│   ├── package.json
+│   ├── vite.config.js
+│   └── tailwind.config.js
 ```
 
 ---
 
-## ⚙️ Setup Instructions
+## 🚀 Quick Start
 
-### 🔁 Backend (Django)
-
+### Backend (Django)
 ```bash
 cd backend
 python -m venv venv
-venv\Scripts\activate  # or source venv/bin/activate on macOS/Linux
+venv\Scripts\activate
 pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
 ```
 
-✅ Create `.env` in the backend root:
+**Add your `.env` file:**
 ```
-OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
----
-
-### 💻 Frontend (React)
-
+### Frontend (React)
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
 
-🧠 Make sure Axios points to:
+Ensure your React app posts queries to:
 ```
 http://127.0.0.1:8000/api/chat/
 ```
 
 ---
 
-## 📡 API Overview
+## 💡 How It Works
 
-### POST `/api/chat/`
-
-**Request Body:**
-```json
-{
-  "query": "Summarize budget 2025"
-}
-```
-
-**Sample Response:**
-```json
-{
-  "reply": "The 2025 budget focuses on capital expenditure, fiscal consolidation..."
-}
-```
+- `/api/chat/` receives POST queries.
+- If the query involves sentiment, it invokes FinBERT.
+- Otherwise, OpenAI GPT processes the response.
+- React frontend sends API requests via Axios and updates response on screen.
 
 ---
 
-## 🧠 How It Works
+## 🛠️ Challenges Solved
 
-1. **Frontend (React)** sends a POST request to `/api/chat/` via Axios.
-2. **Backend (Django)** receives the query:
-   - If it includes the word “sentiment” → analyzed using FinBERT.
-   - Else → passed to GPT-3.5 via OpenAI SDK.
-3. Response is sent back and rendered in the chat interface.
+- Migrated to OpenAI v1.0 Python SDK (breaking changes from old versions)
+- Handled CORS errors via `django-cors-headers`
+- Fixed broken pipeline errors and timeout issues with JSON payloads
+- Created a single GitHub repo with unified backend + frontend folders
 
 ---
 
-## 👥 Maintainer
+## 📌 Note
 
-Made with ❤️ by [@SrijanSaraswat](https://github.com/SrijanSaraswat)
-
-For academic, research, and prototype use. Contact for enterprise licensing.
+This project is structured for academic, hackathon, or early-stage production use. For enterprise scalability, consider Docker, PostgreSQL, and deployment on platforms like Render, Vercel, or Railway.
